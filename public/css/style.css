@@ -1,0 +1,62 @@
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .main h1{
+      color: #fff;
+  }
+
+  .main p{
+      text-align: center;
+      margin-top: 20px;
+  }
+
+  .main a{
+      margin-top: 70px;
+  }
+  
+  #wrapper {
+    cursor: pointer;
+    overflow: visible;
+  }
+  
+  #wrapper svg {
+    margin-top: 15vh;
+    transform: scale(2.8);
+  }
+  
+  /* Styles for the actual interaction */
+  #wrapper svg {
+    position: relative;
+    bottom: 8px;
+    overflow: visible;
+  }
+  
+  #wrapper svg .leaf {
+    transform: scale(1);
+    transform-origin: center 90px;
+    animation: shrink 0.6s 0s 1 reverse forwards;
+  }
+  
+  #wrapper:hover svg .leaf {
+    animation: grow 0.6s 0s 1 normal forwards;
+  }
+  
+  @keyframes grow {
+    to {
+      transform: scale(1.08) rotate(-1deg);
+    }
+  }
+    
+  @keyframes shrink {
+    to {
+      transform: scale(1.08) rotate(-1deg);
+    }
+  }
+
+ 

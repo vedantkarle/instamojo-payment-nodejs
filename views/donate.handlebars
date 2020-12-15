@@ -1,0 +1,17 @@
+<section class="py-5">
+    <form style="width: 500px;display:flex;flex-direction:column;" action="/donate" method="POST">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input name="name" type="text" class="form-control" id="name" aria-describedby="name">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input name="email" type="email" class="form-control" id="email" aria-describedby="email">
+        </div>
+        <div class="mb-3">
+            <label for="amount" class="form-label">Amount</label>
+            <input name="amount" type="number" class="form-control" id="amount" aria-describedby="amount">
+        </div>
+        <button type="submit" class="btn btn-success">Generate Link</button>
+    </form>
+</section>
